@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Content Creation",
     "Sharing",
     "10xTech Infinity",
-    "manojofficialmj",
+    "abhishek",
   ],
   icons: {
     icon: "/favicon.svg",

@@ -4,19 +4,19 @@ import Link from "next/link";
 
 const socialLinks: { url: string; icon: ReactElement }[] = [
   {
-    url: "https://x.com/manojofficialmj",
+    url: "https://x.com/Abhishek_Ji_10?t=COkjON_LhEg3HVsqQlYxlQ&s=09",
     icon: (
       <TwitterIcon className="h-6 w-6 transition-all duration-300 ease-in-out hover:text-mediumslateblue" />
     ),
   },
   {
-    url: "https://www.linkedin.com/in/manojoffcialmj/",
+    url: "https://www.linkedin.com/in/abhishek-kumar-170492258/",
     icon: (
       <LinkedinIcon className="h-6 w-6 transition-all duration-300 ease-in-out hover:text-mediumslateblue" />
     ),
   },
   {
-    url: "https://github.com/bcapathshala",
+    url: "https://github.com/abhishek-8081",
     icon: (
       <GithubIcon className="h-6 w-6 transition-all duration-300 ease-in-out hover:text-mediumslateblue" />
     ),
