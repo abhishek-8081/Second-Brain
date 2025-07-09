@@ -8,7 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { EyeIcon, EyeOffIcon } from "lucide-react";
 import { signinSchema, TSigninSchema } from "@/schemas/user.schemas";
 import { signIn } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router"; // ✅ fixed import
 import toast from "react-hot-toast";
 import Button from "../ui/button";
 
@@ -33,13 +33,15 @@ export default function SignInForm() {
         redirect: false,
         identifier: data.username,
         password: data.password,
+        callbackUrl: "/dashboard", // ✅ added
       });
 
-      if (result?.ok) {
-        router.push("/dashboard");
+      if (result?.ok && result.url) {
+        router.push(result.url); // ✅ changed
         toast.success("Signin successful");
       } else {
         setError(result?.error || "Signin failed");
+        toast.error(result?.error || "Signin failed");
       }
     } catch (error: any) {
       setError("Sometning went wrong while signin, please try again");
