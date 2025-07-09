@@ -1,0 +1,15 @@
+User-Agent: *
+Allow: /
+Disallow: /api
+Disallow: /api/
+Disallow: /api/*
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /dashboard
+Disallow: /dashboard/
+Disallow: /dashboard/*
+Disallow: /access-denied
+Disallow: /robots.txt
+
+Sitemap: https://2ndbrain.vercel.app/sitemap.xml
